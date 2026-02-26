@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -133,7 +134,7 @@
     .delay-1{transition-delay:.1s}.delay-2{transition-delay:.2s}.delay-3{transition-delay:.3s}.delay-4{transition-delay:.4s}
     .centered-header{text-align:center;max-width:750px;margin:0 auto 60px}
     .centered-header .section-text{text-align:center;margin:0 auto}
-    @media(max-width:1024px){.section{padding:70px 24px}.why-grid{grid-template-columns:1fr;gap:36px}.why-video-wrap{max-height:320px}.concept,.concept.reversed{grid-template-columns:1fr;direction:rtl}.concept-visual{min-height:280px}.concept-text{padding:36px 24px}.stats-grid{grid-template-columns:1fr 1fr}.integration-grid{grid-template-columns:1fr;max-width:460px}.timeline-item,.timeline-item:nth-child(odd){flex-direction:column;align-items:center}.timeline::before,.timeline-dot{display:none}.timeline-content{width:100%!important;text-align:right!important}}
+    @media(max-width:1024px){.section{padding:70px 24px}.why-grid{grid-template-columns:1fr;gap:36px}.why-video-wrap{max-height:320px}.concept,.concept.reversed{grid-template-columns:1fr;direction:rtl}.concept.reversed .concept-visual{order:-1}.concept-visual{min-height:280px}.concept-text{padding:36px 24px}.concept+.concept{border-top:3px solid rgba(244,0,9,.08)}.stats-grid{grid-template-columns:1fr 1fr}.integration-grid{grid-template-columns:1fr;max-width:460px}.timeline-item,.timeline-item:nth-child(odd){flex-direction:column;align-items:center}.timeline::before,.timeline-dot{display:none}.timeline-content{width:100%!important;text-align:right!important}}
     @media(max-width:768px){nav{padding:12px 16px}.nav-links{display:none}.specs-grid{grid-template-columns:1fr}.concept-number{font-size:60px}.value-grid{grid-template-columns:1fr}.cta-buttons{flex-direction:column;align-items:center}.stats-grid{grid-template-columns:1fr 1fr;gap:10px}.stat-card{padding:20px 12px}.stat-number{font-size:32px}}
   </style>
 </head>
@@ -224,49 +225,52 @@
       </div>
     </div>
 
-    <div class="concept reversed">
-      <div class="concept-text">
-        <div class="concept-number reveal">02</div>
-        <h3 class="concept-name reveal delay-1"><span class="highlight">بريك</span> فن</h3>
-        <p class="concept-tag reveal delay-1">عروض موسيقية حميمية بأسلوب Tiny Desk في بيئة العمل</p>
-        <div class="info-box challenge reveal delay-2"><div class="info-box-label">✦ التحدي</div><p>الروتين في بيئة العمل يفتقر إلى اللحظات الثقافية التي تجدد الطاقة وتحسّن الرفاهية النفسية.</p></div>
-        <div class="info-box magic reveal delay-3"><div class="info-box-label">✦ اللحظة السحرية</div><p>عروض موسيقية حميمية بأسلوب Tiny Desk داخل مكاتب الشركات الكبرى — فنانون محترفون بعروض حية، مع كوكا كولا باردة. تُصوَّر بتقنية 360°.</p></div>
-        <div class="specs-grid reveal delay-4">
-          <div class="spec-item"><span class="spec-icon">🏢</span><div><span class="spec-label">الموقع</span><span class="spec-value">مكاتب الشركات</span></div></div>
-          <div class="spec-item"><span class="spec-icon">👥</span><div><span class="spec-label">الجمهور</span><span class="spec-value">موظفو الشركة</span></div></div>
-          <div class="spec-item"><span class="spec-icon">📸</span><div><span class="spec-label">التصوير</span><span class="spec-value">تقنية 360°</span></div></div>
-          <div class="spec-item"><span class="spec-icon">❤️</span><div><span class="spec-label">الفائدة</span><span class="spec-value">رفاهية الموظفين</span></div></div>
-        </div>
-      </div>
-      <div class="concept-visual">
-        <video autoplay muted loop playsinline style="filter:brightness(.4) saturate(1.2)"><source src="concept2-tinydesk.mp4" type="video/mp4"></video>
-        <div class="concept-visual-overlay teal-overlay"></div>
-        <div class="concept-visual-number">02</div>
-        <div class="concept-visual-label left-label">التجربة الثانية</div>
-      </div>
+```
+<div class="concept reversed">
+  <div class="concept-text">
+    <div class="concept-number reveal">02</div>
+    <h3 class="concept-name reveal delay-1"><span class="highlight">بريك</span> فن</h3>
+    <p class="concept-tag reveal delay-1">عروض موسيقية حميمية بأسلوب Tiny Desk في بيئة العمل</p>
+    <div class="info-box challenge reveal delay-2"><div class="info-box-label">✦ التحدي</div><p>الروتين في بيئة العمل يفتقر إلى اللحظات الثقافية التي تجدد الطاقة وتحسّن الرفاهية النفسية.</p></div>
+    <div class="info-box magic reveal delay-3"><div class="info-box-label">✦ اللحظة السحرية</div><p>عروض موسيقية حميمية بأسلوب Tiny Desk داخل مكاتب الشركات الكبرى — فنانون محترفون بعروض حية، مع كوكا كولا باردة. تُصوَّر بتقنية 360°.</p></div>
+    <div class="specs-grid reveal delay-4">
+      <div class="spec-item"><span class="spec-icon">🏢</span><div><span class="spec-label">الموقع</span><span class="spec-value">مكاتب الشركات</span></div></div>
+      <div class="spec-item"><span class="spec-icon">👥</span><div><span class="spec-label">الجمهور</span><span class="spec-value">موظفو الشركة</span></div></div>
+      <div class="spec-item"><span class="spec-icon">📸</span><div><span class="spec-label">التصوير</span><span class="spec-value">تقنية 360°</span></div></div>
+      <div class="spec-item"><span class="spec-icon">❤️</span><div><span class="spec-label">الفائدة</span><span class="spec-value">رفاهية الموظفين</span></div></div>
     </div>
+  </div>
+  <div class="concept-visual">
+    <video autoplay muted loop playsinline style="filter:brightness(.4) saturate(1.2)"><source src="concept2-tinydesk.mp4" type="video/mp4"></video>
+    <div class="concept-visual-overlay teal-overlay"></div>
+    <div class="concept-visual-number">02</div>
+    <div class="concept-visual-label left-label">التجربة الثانية</div>
+  </div>
+</div>
 
-    <div class="concept">
-      <div class="concept-visual">
-        <video autoplay muted loop playsinline style="filter:brightness(.4) saturate(1.3)"><source src="concept3-plaza.mp4" type="video/mp4"></video>
-        <div class="concept-visual-overlay gold-overlay"></div>
-        <div class="concept-visual-number">03</div>
-        <div class="concept-visual-label">التجربة الثالثة</div>
-      </div>
-      <div class="concept-text">
-        <div class="concept-number reveal">03</div>
-        <h3 class="concept-name reveal delay-1">إيقاع <span class="highlight">الأعمال</span></h3>
-        <p class="concept-tag reveal delay-1">فواصل موسيقية حية في المناطق التجارية والمالية</p>
-        <div class="info-box challenge reveal delay-2"><div class="info-box-label">✦ التحدي</div><p>الموظفون في المناطق التجارية يقضون فترات الاستراحة في بيئة مرهقة تفتقر للإلهام.</p></div>
-        <div class="info-box magic reveal delay-3"><div class="info-box-label">✦ اللحظة السحرية</div><p>فواصل موسيقية في ساحات KAFD والمدينة الرقمية — فنانون محترفون مع محطات Coca-Cola للاستراحة. من الكلاسيكية إلى المعاصرة، مع تركيز على الموسيقى السعودية.</p></div>
-        <div class="specs-grid reveal delay-4">
-          <div class="spec-item"><span class="spec-icon">📍</span><div><span class="spec-label">المواقع</span><span class="spec-value">KAFD والمدينة الرقمية</span></div></div>
-          <div class="spec-item"><span class="spec-icon">🕐</span><div><span class="spec-label">التوقيت</span><span class="spec-value">وقت الغداء</span></div></div>
-          <div class="spec-item"><span class="spec-icon">👥</span><div><span class="spec-label">الجمهور</span><span class="spec-value">موظفو الشركات</span></div></div>
-          <div class="spec-item"><span class="spec-icon">⚡</span><div><span class="spec-label">الفائدة</span><span class="spec-value">تجديد الطاقة</span></div></div>
-        </div>
-      </div>
+<div class="concept">
+  <div class="concept-visual">
+    <video autoplay muted loop playsinline style="filter:brightness(.4) saturate(1.3)"><source src="concept3-plaza.mp4" type="video/mp4"></video>
+    <div class="concept-visual-overlay gold-overlay"></div>
+    <div class="concept-visual-number">03</div>
+    <div class="concept-visual-label">التجربة الثالثة</div>
+  </div>
+  <div class="concept-text">
+    <div class="concept-number reveal">03</div>
+    <h3 class="concept-name reveal delay-1">إيقاع <span class="highlight">الأعمال</span></h3>
+    <p class="concept-tag reveal delay-1">فواصل موسيقية حية في المناطق التجارية والمالية</p>
+    <div class="info-box challenge reveal delay-2"><div class="info-box-label">✦ التحدي</div><p>الموظفون في المناطق التجارية يقضون فترات الاستراحة في بيئة مرهقة تفتقر للإلهام.</p></div>
+    <div class="info-box magic reveal delay-3"><div class="info-box-label">✦ اللحظة السحرية</div><p>فواصل موسيقية في ساحات KAFD والمدينة الرقمية — فنانون محترفون مع محطات Coca-Cola للاستراحة. من الكلاسيكية إلى المعاصرة، مع تركيز على الموسيقى السعودية.</p></div>
+    <div class="specs-grid reveal delay-4">
+      <div class="spec-item"><span class="spec-icon">📍</span><div><span class="spec-label">المواقع</span><span class="spec-value">KAFD والمدينة الرقمية</span></div></div>
+      <div class="spec-item"><span class="spec-icon">🕐</span><div><span class="spec-label">التوقيت</span><span class="spec-value">وقت الغداء</span></div></div>
+      <div class="spec-item"><span class="spec-icon">👥</span><div><span class="spec-label">الجمهور</span><span class="spec-value">موظفو الشركات</span></div></div>
+      <div class="spec-item"><span class="spec-icon">⚡</span><div><span class="spec-label">الفائدة</span><span class="spec-value">تجديد الطاقة</span></div></div>
     </div>
+  </div>
+</div>
+```
+
   </section>
 
   <section class="section" id="integration" style="background:linear-gradient(180deg,#0D0D0D,var(--black))">
@@ -334,5 +338,6 @@
     document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var target=document.querySelector(this.getAttribute('href'));if(target)target.scrollIntoView({behavior:'smooth',block:'start'})})});
     window.addEventListener('scroll',function(){var heroContent=document.querySelector('.hero-content');var scrollY=window.scrollY;if(scrollY<window.innerHeight){heroContent.style.transform='translateY('+scrollY*0.2+'px)';heroContent.style.opacity=1-(scrollY/window.innerHeight)}});
   </script>
+
 </body>
 </html>
